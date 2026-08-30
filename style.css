@@ -1,0 +1,90 @@
+/* Global Reset & Base Styles */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Header & Navigation */
+header {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 12px;
+}
+
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Articles */
+article {
+    background: #ffffff;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+/* Headings */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+/* Form Elements */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Multimedia */
+audio, video {
+    margin: 8px 0;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    color: #666;
+    font-size: 0.9em;
+}
