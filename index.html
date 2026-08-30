@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activity 1: Web Architecture & Semantic HTML5</title>
+
+     <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+     <style>
+        section {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 20px;
+          margin: 15px 0;
+          box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+        }
+        #multimedia {
+          background-color: 1px solid #ddd;
+        }
+        #form-section {
+          background-color: 1px solid #ddd;
+        }
+      
+     </style>
+</head>
+<body>
+    <header>
+        <!-- Inline CSS -->
+        <h1 style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 8px;">Web Architecture & Semantic HTML5</h1>
+        <nav>
+            <a href="#architecture">Web Architecture</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#form-section">Contact Form</a>
+        </nav>
+    </header>
+
+    <main>
+    
+<!-- Section 1: Architecture -->
+        <section id="architecture">
+            <h2>Web Architecture Basics</h2>
+
+            <article>
+                <h3>Client-Server Model</h3>
+                <p>The client sends requests and the server responds with resources like web pages. Your browser is the client; the host computer is the server.</p>
+            </article>
+
+            <article>
+                <h3>DNS (Domain Name System)</h3>
+                <p>Translates easy-to-remember domain names (like google.com) into numeric IP addresses computers use to find each other.</p>
+            </article>
+
+            <article>
+                <h3>HTTP vs HTTPS</h3>
+                <p>HTTP = Hypertext Transfer Protocol — plain text, unencrypted. HTTPS = Secure HTTP — data is encrypted, safer for passwords & payments.</p>
+            </article>
+        </section>
+<section id="multimedia">
+
+            <h2>2. HTML5 Multimedia</h2>
+
+            <h3>Audio Tag</h3>
+
+            <audio controls>
+                <source
+                    src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Tag</h3>
+
+            <video
+                width="320"
+                height="180"
+                controls
+                style="border: 2px solid #1683c7;">
+
+                <source
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4">
+
+                Your browser does not support the video element.
+
+            </video>
+
+        </section>
+
+        <section id="form-section">
+        <h2>Form Section</h2>
+        <form>
+            <label for="fullname">Full Name (Required):</label>
+            <br>
+            <input
+                type ="text"
+                id="fullname"
+                name="fullname"
+                required
+            >
+            <br><br>
+            <label for="email">Email Address (Native Validation):</label>
+            <br>
+            <input
+                type="email"
+                id="email"
+                name="emial"
+                required
+            >
+            <br><br>
+            <label for="protocol-selection">Which protocol uses encryption?</label>
+            <br>
+            <select >
+                <option value="">--Select an Option--</option>
+                <option value="HTTP">HTTP</option>
+                <option value="HTTPS">HTTPS</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit Form</button>
+            <br><br>
